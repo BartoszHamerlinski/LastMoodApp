@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mood Music App</string>
+    <string name="chill_relax_text_view">Chill And Relax</string>
+    <string name="beast_mode_text_view">Beast Mode</string>
+    <string name="concentration_text_view">Concentration</string>
+    <string name="partytime">PartyTime</string>
+    <string name="now_playing">Now Playing</string>
+
+</resources>

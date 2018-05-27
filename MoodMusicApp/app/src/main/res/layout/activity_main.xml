@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/chillAndRelax"
+        style="@style/moodStle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/chill_relax_text_view"
+        android:src="@drawable/chill_and_relax" />
+
+    <TextView
+        style="@style/TextViewsMoods"
+        android:layout_alignTop="@+id/chillAndRelax"
+        android:text="@string/chill_relax_text_view" />
+
+    <ImageView
+        android:id="@+id/beastMode"
+        style="@style/moodStle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/chillAndRelax"
+        android:layout_toRightOf="@id/chillAndRelax"
+        android:contentDescription="@string/beast_mode_text_view"
+        android:src="@drawable/beast_mode" />
+
+    <TextView
+        style="@style/TextViewsMoods"
+        android:layout_alignBottom="@id/beastMode"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/beast_mode_text_view" />
+
+
+    <ImageView
+        android:id="@+id/concentration"
+        style="@style/moodStle"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/chillAndRelax"
+        android:contentDescription="@string/concentration_text_view"
+        android:src="@drawable/concentration" />
+
+    <TextView
+        style="@style/TextViewsMoods"
+        android:layout_alignBottom="@id/concentration"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/concentration_text_view" />
+
+    <ImageView
+        android:id="@+id/partyTime"
+        style="@style/moodStle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/beastMode"
+        android:layout_toEndOf="@id/concentration"
+        android:layout_toRightOf="@id/concentration"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/party_time" />
+
+    <TextView
+        style="@style/TextViewsMoods"
+        android:layout_alignBottom="@id/partyTime"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/partytime" />
+
+</RelativeLayout>
