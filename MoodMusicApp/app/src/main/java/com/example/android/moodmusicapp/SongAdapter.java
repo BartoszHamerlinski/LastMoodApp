@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -39,20 +40,22 @@ public class        SongAdapter extends ArrayAdapter<Songs> {
 
         //find the text view id in playing activity
 
-        TextView singerTextView = listSongsView.findViewById(R.id.singer_number);
+        final TextView singerTextView = listSongsView.findViewById(R.id.singer_number);
         singerTextView.setText(currentSongs.getSinger());
 
-        TextView songsTextView = listSongsView.findViewById(R.id.song_number);
+        final TextView songsTextView = listSongsView.findViewById(R.id.song_number);
         songsTextView.setText(currentSongs.getSingerSong());
 
-        final ImageButton listView = listSongsView.findViewById( R.id.play_this_song);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+        final ImageButton playThis = listSongsView.findViewById(R.id.play_this_song);
+        playThis.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    TextView artist = findViewById(R.id.actual_playing_Singer);
-                    artist.setText(songsAndArtist.get(position).getSinger());
-                    TextView song = findViewById(R.id.actual_playing_Song );
-                    song.setText(songsAndArtist.get(position).getSingerSong());
+
+                    TextView artist = view.findViewById(R.id.actual_playing_Singer);
+                    artist.setText(singerTextView.get(position).getSinger());
+                    TextView song = view.findViewById(R.id.actual_playing_Song );
+                    song.setText(songsTextView.get(position).getSingerSong());
                 }
             });
            return listSongsView;

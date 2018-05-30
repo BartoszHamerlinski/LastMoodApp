@@ -23,7 +23,7 @@ public class ChillAndRelax extends AppCompatActivity {
         songsAndArtist.add(new Songs("Chill Artist 4", "Song no 4"));
         songsAndArtist.add(new Songs("Chill Artist 5", "Song no 5"));
         songsAndArtist.add(new Songs("Chill Artist 6", "Song no 6"));
-        songsAndArtist.add(new Songs("Chill Artist 7", "Song no 7"));
+        songsAndArtist. add(new Songs("Chill Artist 7", "Song no 7"));
         songsAndArtist.add(new Songs("Chill Artist 8", "Song no 8"));
         songsAndArtist.add(new Songs("Chill Artist 9", "Song no 9"));
         songsAndArtist.add(new Songs("Chill Artist 10", "Song no 10"));

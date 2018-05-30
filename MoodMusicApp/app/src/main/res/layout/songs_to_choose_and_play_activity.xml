@@ -12,6 +12,9 @@
 
         <TextView
             android:id="@+id/now_playing_text_view"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/now_playing" />
@@ -24,11 +27,15 @@
 
         <TextView
             android:id="@+id/actual_playing_Singer"
+            android:layout_gravity="center"
+            android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/actual_playing_Song"
+            android:layout_gravity="center"
+            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -44,23 +51,29 @@
             android:id="@+id/previous_song"
             android:src="@drawable/previous_button"
             android:layout_width="50dp"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:layout_margin="10dp"/>
 
         <ImageButton
             android:id="@+id/pause_for_song"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:src="@drawable/pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"/>
 
         <ImageButton
             android:id="@+id/playSong"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:src="@drawable/play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"/>
 
         <ImageButton
             android:id="@+id/next_song"
             android:src="@drawable/next_button"
             android:layout_width="50dp"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:layout_margin="10dp"/>
     </LinearLayout>
 
 
