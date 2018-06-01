@@ -17,16 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChillAndRelax"
-            android:label="@string/chill_relax_text_view" />
+            android:label="@string/chill_relax_text_view"/>
         <activity android:name=".BeastMode"
             android:label="@string/beast_mode_text_view"/>
         <activity android:name=".Concentration"
             android:label="@string/concentration_text_view"/>
         <activity android:name=".PartyTime"
             android:label="@string/partytime"/>
-        <activity android:name=".songs_information">
 
-        </activity>
+
+
+
     </application>
 
 </manifest>

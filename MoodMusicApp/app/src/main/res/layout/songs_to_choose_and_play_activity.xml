@@ -10,14 +10,25 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/Choose_your_mood"
+            android:onClick="Go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Choose your Mood"
+            android:layout_margin="10dp"/>
+
         <TextView
             android:id="@+id/now_playing_text_view"
-            android:layout_gravity="center"
-            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
             android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/now_playing" />
+
+
 
         <ImageView
             android:id="@+id/now_playing_mood_image"

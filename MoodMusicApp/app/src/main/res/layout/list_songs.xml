@@ -3,16 +3,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
 
-    >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
     <TextView
         android:id="@+id/singer_number"
         style="@style/ListViewText"/>
@@ -21,14 +15,5 @@
         android:id="@+id/song_number"
         style="@style/ListViewText"/>
 
-    </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/play_this_song"
-        android:layout_width="53dp"
-        android:layout_height="50dp"
-        android:layout_weight="0"
-        android:layout_gravity="end"
-        android:src="@drawable/play_button" />
 
 </LinearLayout>
